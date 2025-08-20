@@ -30,19 +30,8 @@ export default function CommentLink({
         borderBottom: `2px solid ${matchColors(color)}`,
       }}
     >
-      <span
-        style={{
-          color: "white",
-        }}
-      >
-        {length}
-      </span>
-      <i
-        style={{
-          color: "white",
-        }}
-        className="bi bi-chat-left-text"
-      ></i>
+      <span>{length}</span>
+      <i className="bi bi-chat-left-text"></i>
     </div>
   );
 }

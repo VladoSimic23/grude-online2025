@@ -27,7 +27,9 @@ const MobilePromo = async () => {
       }}
     >
       <div>
-        <h1 style={{ borderBottom: "2px solid #ea8a2b" }}>Promo</h1>
+        <h1 style={{ borderBottom: "2px solid #ea8a2b", color: "white" }}>
+          Promo
+        </h1>
       </div>
       <div className="slideTest">
         {nodes.map((item, index: number) => {
@@ -72,7 +74,7 @@ const MobilePromo = async () => {
                     fontSize="12px"
                   /> */}
                 </div>
-                <h1 style={{ fontSize: "20px" }}>
+                <h1 style={{ fontSize: "20px", color: "white" }}>
                   {decodeHTMLEntities(item?.title)}
                 </h1>
               </a>

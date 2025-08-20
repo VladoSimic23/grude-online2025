@@ -60,7 +60,7 @@ const MobileIzdvojenoVijesti = ({
                     className={style.imageCover}
                     src={item.featuredImage.node.sourceUrl}
                     width={300}
-                    height={220}
+                    height={240}
                     alt={item.title}
                     quality={30}
                     priority={true}
@@ -70,7 +70,7 @@ const MobileIzdvojenoVijesti = ({
                     style={{
                       textAlign: "center",
                       padding: "4px 5px 6px 5px",
-                      fontSize: "18px",
+                      fontSize: "22px",
                       position: "absolute",
                       zIndex: "2",
                       bottom: "0",
