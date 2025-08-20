@@ -24,7 +24,6 @@ const MobilePromo = async () => {
         margin: "25px 0 30px 0",
         background: "#424141",
         padding: "0 15px",
-        //boxShadow: " 1px 0px 8px 1px #424141",
       }}
     >
       <div>
