@@ -39,7 +39,6 @@ const MobileIzdvojenoVijesti = ({
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       className="mySwiper"
-      //style={{ borderRadius: "10px" }}
     >
       {vijesti.map((item: IzdvojenoMobileI, index: number) => {
         const { hasImages, hasVideo } = cheerioCheck(item?.content, item?.tags);
