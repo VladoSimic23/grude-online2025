@@ -8,6 +8,8 @@ import defaultImage from "../../../../../public/noImage.jpg";
 import { getPostsByCategorySmall2 } from "@/app/functions/queries/postsByCategorySmall";
 import { decodeHTMLEntities } from "@/app/functions/decodeHtml";
 
+//import { getRecentPostSlugs } from "@/app/libs/Queries/Queries/recentPosts";
+
 const MobilePromo = async () => {
   //const naja = await getRecentPostSlugs(10);
   const promoNews = await getPostsByCategorySmall2("promo", 6, "MEDIUM");
