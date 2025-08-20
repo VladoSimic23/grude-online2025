@@ -1,0 +1,268 @@
+.activeThumb {
+  border: 3px solid orange; /* Add an orange border to the active thumb */
+}
+
+.mobileSingleItem {
+  position: relative;
+}
+
+.mobileCommentCount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.mobileCommentCount :nth-child(1) {
+  margin-right: 5px;
+}
+.mobileCommentCount i {
+  font-size: 16px;
+}
+
+.mobileCommentCount2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.mobileCommentCount2 :nth-child(1) {
+  margin-right: 5px;
+}
+.mobileCommentCount2 i {
+  font-size: 16px;
+}
+
+.mobileCategoryOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: purple;
+  color: white;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.mobilePhotos {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6392156863);
+  border-top-left-radius: 10px;
+}
+.mobilePhotos i {
+  background: rgba(149, 84, 65, 0.56);
+  display: flex;
+  padding: 5px 10px;
+}
+
+.mobileSpan {
+  font-size: 14px;
+  color: white;
+}
+
+.mobileDateAndComments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileComments {
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+.mobileComments i {
+  margin-left: 5px;
+}
+
+.mobileButton {
+  border: none;
+  display: block;
+  margin: 30px auto;
+  font-size: 14px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: darkslateblue;
+  color: white;
+  font-weight: 600;
+}
+
+.mobileButtonOrange {
+  border: none;
+  display: block;
+  margin: 30px auto;
+  font-size: 16px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: rgb(27, 65, 153);
+  color: white !important;
+  font-weight: 700;
+}
+
+.mobilePromoBanner {
+  color: white;
+  width: 100%;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.slideTestParent {
+  display: grid;
+}
+.slideTestParent h1 {
+  display: inline-block;
+}
+
+.slideTest {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+}
+.slideTest div {
+  display: inline-block;
+}
+
+.slideTestChildWrap {
+  position: relative;
+  display: flex !important;
+}
+.slideTestChildWrap span {
+  background: #0151c7;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom-right-radius: 7px;
+  font-size: 11px;
+  padding: 3px 5px 2px 5px;
+  color: white;
+}
+
+.slideTestChild {
+  padding-right: 15px;
+}
+.slideTestChild a {
+  text-decoration: none;
+}
+.slideTestChild img {
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slideTestChild h1 {
+  white-space: wrap;
+  font-size: 14px;
+  line-height: 1.3 !important;
+  margin-top: 5px !important;
+  border-bottom: none;
+}
+
+.slideTestChild:nth-last-child(-n+1) {
+  padding-right: 0;
+}
+
+.slideTestChild2 {
+  padding-right: 15px;
+}
+.slideTestChild2 a {
+  text-decoration: none;
+}
+.slideTestChild2 img {
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slideTestChild2 h1 {
+  white-space: wrap;
+  font-size: 14px;
+  line-height: 1.3 !important;
+  margin-top: 5px !important;
+  border-bottom: none;
+}
+
+.MobileInnerHTML img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.MobileInnerHTML iFrame {
+  max-width: 100%;
+  background: white;
+  aspect-ratio: 16/9;
+}
+.MobileInnerHTML div {
+  width: auto !important;
+}
+.MobileInnerHTML div video {
+  width: 100%;
+  height: auto;
+}
+.MobileInnerHTML p {
+  font-size: 18px;
+}
+
+.PostSharing a {
+  font-size: 24px;
+}
+
+.toTop {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 5;
+}
+.toTop i {
+  background: rgba(234, 134, 36, 0.6392156863);
+  color: white;
+  padding: 8px 10px;
+}
+
+.mobCarousel {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  align-items: center;
+}
+.mobCarousel img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  width: auto;
+}
+
+.galleryGridImg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+@media (orientation: landscape) {
+  .landscapeView {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .landscapeView .landscapeViewChild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=mobileIzdvojeno.css.map */

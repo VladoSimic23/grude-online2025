@@ -1,0 +1,194 @@
+// ==========================
+// VARIABLES
+// ==========================
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+
+// Container widths
+$container-mobile: 100%;
+$container-tablet: 720px;
+$container-desktop: 1140px;
+
+// Font sizes
+$font-body-mobile: 14px;
+$font-body-tablet: 16px;
+$font-body-desktop: 18px;
+
+// Heading sizes (možeš prilagoditi po želji)
+$h1-mobile: 28px;
+$h1-tablet: 36px;
+$h1-desktop: 48px;
+
+$h2-mobile: 24px;
+$h2-tablet: 30px;
+$h2-desktop: 40px;
+
+$h3-mobile: 20px;
+$h3-tablet: 24px;
+$h3-desktop: 32px;
+
+$h4-mobile: 18px;
+$h4-tablet: 20px;
+$h4-desktop: 26px;
+
+$h5-mobile: 16px;
+$h5-tablet: 18px;
+$h5-desktop: 22px;
+
+$h6-mobile: 14px;
+$h6-tablet: 16px;
+$h6-desktop: 18px;
+
+
+// ==========================
+// MIXINS
+// ==========================
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+// ==========================
+// LAYOUT
+// ==========================
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @include tablet {
+    max-width: $container-tablet;
+  }
+
+  @include desktop {
+    max-width: $container-desktop;
+  }
+}
+
+// ==========================
+// GRID SYSTEM (12 cols)
+// ==========================
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+
+// Default col
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+// Responsive cols
+@for $i from 1 through 12 {
+  @include tablet {
+    .col-md-#{$i} {
+      grid-column: span $i;
+    }
+  }
+  @include desktop {
+    .col-lg-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+// ==========================
+// TYPOGRAPHY
+// ==========================
+
+// Body text
+body, p, span, a, li {
+  font-size: $font-body-mobile;
+
+  @include tablet {
+    font-size: $font-body-tablet;
+  }
+
+  @include desktop {
+    font-size: $font-body-desktop;
+  }
+}
+
+// Headings
+h1 {
+  font-size: $h1-mobile;
+  margin: 18px 0;
+  @include tablet { font-size: $h1-tablet; margin: 20px 0 }
+  @include desktop { font-size: $h1-desktop; margin: 24px 0 }
+}
+
+h2 {
+  font-size: $h2-mobile;
+  @include tablet { font-size: $h2-tablet; }
+  @include desktop { font-size: $h2-desktop; }
+}
+
+h3 {
+  font-size: $h3-mobile;
+  @include tablet { font-size: $h3-tablet; }
+  @include desktop { font-size: $h3-desktop; }
+}
+
+h4 {
+  font-size: $h4-mobile;
+  @include tablet { font-size: $h4-tablet; }
+  @include desktop { font-size: $h4-desktop; }
+}
+
+h5 {
+  font-size: $h5-mobile;
+  @include tablet { font-size: $h5-tablet; }
+  @include desktop { font-size: $h5-desktop; }
+}
+
+h6 {
+  font-size: $h6-mobile;
+  @include tablet { font-size: $h6-tablet; }
+  @include desktop { font-size: $h6-desktop; }
+}
+
+///////////////
+/// 
+/// 
+/// 
+/// 
+.imageCover {
+    max-width: 100%;  
+    object-fit: cover;
+    width: 100%;
+    //height: auto;
+}
+.imageContain {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+  //height: auto;
+}
+.imageContainGallery {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.orangeBorder {
+  display: inline-block;
+  border-bottom: 2px solid #ea8624;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,120 @@
+.swiper-pagination {
+  top: 0px !important;
+  left: 70px;
+  text-align: left !important;
+  padding-left: 8px;
+  height: 2px !important;
+  color: white;
+  font-size: 22px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  height: 100% !important;
+  /* top: 10px !important; */
+}
+
+.swiper-button-prev {
+  left: 50px !important;
+  width: 30px !important;
+}
+.swiper-button-next {
+  right: 50px !important;
+  width: 30px !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px !important;
+  position: absolute !important;
+  /* top: 120px !important; */
+}
+.swiper-button-prev::after {
+  left: 15px;
+}
+.swiper-button-next::after {
+  right: 15px;
+}
+.swiper-pagination-bullet {
+  background: white !important;
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 0.7 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #7f8183 !important;
+}
+.instagram-media {
+  height: revert-layer !important;
+}
+.tiktok-embed {
+  background: white;
+  padding: 20px 0;
+}
+iframe[src*="youtube.com"] {
+  height: auto; /* ili što želiš */
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+/* .whiteMode {
+  margin-top: 75px;
+  background: white;
+}
+.whiteMode h1,
+h2,
+h3,
+h4 {
+  color: #423b3b;
+}
+.whiteMode .swiper h1 {
+  color: white;
+}
+.whiteMode .swiper i {
+  color: White !important;
+}
+.whiteMode span {
+  color: #423b3b;
+}
+.whiteMode i {
+  color: #423b3b !important;
+}
+.whiteMode .mobileSingleItem i {
+  color: white !important;
+} */
+@media only screen and (max-width: 992px) {
+  .swiper-button-prev {
+    left: 0px !important;
+    width: 30px !important;
+  }
+  .swiper-button-next {
+    right: 0px !important;
+    width: 30px !important;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 0px !important;
+    position: absolute !important;
+    /* top: 120px !important; */
+  }
+  /* .swiper-pagination {
+    top: -7px !important;
+  } */
+}
+
+@media (orientation: landscape) {
+  .custom-swiper {
+    height: 100vh !important;
+    padding: 3px 10px !important;
+  }
+
+  .custom-thumb {
+    display: none;
+  }
+  .image-style img {
+    aspect-ratio: "16/9";
+    max-height: 80vh;
+    margin-top: 100px;
+  }
+  .carousel-nav {
+    padding: 0;
+  }
+}

@@ -1,0 +1,17 @@
+// .mobileMainStyle {
+//     a,h1,h2,h3,h4,h5,h6,p,span {
+//         color: rgb(238, 238, 238);
+//     }
+// }
+.imageCover {
+    max-width: 100%;  
+    object-fit: cover;
+    width: 100%;
+    //height: auto;
+}
+.imageContain {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+  //height: auto;
+}
