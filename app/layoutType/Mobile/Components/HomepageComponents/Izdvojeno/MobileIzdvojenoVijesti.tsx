@@ -51,19 +51,6 @@ const MobileIzdvojenoVijesti = ({
           >
             <a href={`/${item.slug}`} style={{ textDecoration: "none" }}>
               <div style={{ position: "relative" }}>
-                {/* {index < 3 && (
-                  <Image
-                    style={{ position: "absolute", zIndex: "-1" }}
-                    className={style.imageCover}
-                    src={item.featuredImage.node.sourceUrl}
-                    width={300}
-                    height={220}
-                    alt={item.title}
-                    priority={index < 3 ? true : false}
-                    fetchPriority={index < 3 ? "high" : "low"}
-                    quality={1}
-                  />
-                )} */}
                 <div style={{ position: "relative" }}>
                   <Image
                     style={{
