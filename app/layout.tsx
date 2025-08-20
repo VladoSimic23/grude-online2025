@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import "./css/framework.scss";
-//import { detectDevice } from "./lib/detectDevice";
+import { detectDevice } from "./lib/detectDevice";
 //import MobileNav from "./layoutType/Mobile/Components/Nav/MobileNav";
 import mobileMainStyle from "./layoutType/Mobile/mainStyle/mobileMainStyle.module.css";
 import { ThemeProvider } from "./lib/ThemeProvider";
 import dynamic from "next/dynamic";
+import MobileFooter from "./layoutType/Mobile/Components/Footer/MobileFooter";
+import MobilePopularno from "./layoutType/Mobile/Components/HomepageComponents/MobilePopularno/MobilePopularno";
 const MobileNav = dynamic(
   () => import("./layoutType/Mobile/Components/Nav/MobileNav")
 );
@@ -31,7 +33,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  //const deviceType = await detectDevice();
+  const deviceType = await detectDevice();
 
   return (
     <html lang="en">
@@ -41,6 +43,8 @@ export default async function RootLayout({
         <ThemeProvider>
           <MobileNav />
           {children}
+          {deviceType === "mobile" && <MobilePopularno />}
+          {deviceType === "mobile" && <MobileFooter />}
         </ThemeProvider>
       </body>
     </html>

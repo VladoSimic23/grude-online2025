@@ -8,13 +8,6 @@ export default async function Home() {
     return (
       <div style={{ marginTop: "80px" }}>
         <MobileContainer />
-        <h1>dasdasd</h1>
-        <a href="fds">asdsagfdg</a>
-        <span>fdsfsdf</span>
-        <p>gfdgdfgfdg</p>
-        <ul>
-          <li>fdsfsdf</li>
-        </ul>
       </div>
     );
   }
