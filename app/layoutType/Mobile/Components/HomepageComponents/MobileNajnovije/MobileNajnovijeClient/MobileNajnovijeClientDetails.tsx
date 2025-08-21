@@ -52,13 +52,23 @@ const MobileNajnovijeClientDetails = ({
               <span>Oglas</span>
             </div>
           )}
-          <div
-            className="mobileCommentCount"
-            style={{ background: matchColors(theCategoryColor) }}
-          >
-            {hasImages && <i className="bi bi-camera"></i>}
-            {hasVideo && <i className="bi bi-youtube"></i>}
-          </div>
+          {hasVideo ||
+            (hasImages && (
+              <div
+                className="mobileCommentCount"
+                style={{ background: matchColors(theCategoryColor) }}
+              >
+                {hasImages && (
+                  <i
+                    className="bi bi-camera"
+                    style={
+                      hasVideo ? { marginRight: "10px" } : { marginRight: "0" }
+                    }
+                  ></i>
+                )}
+                {hasVideo && <i className="bi bi-youtube"></i>}
+              </div>
+            ))}
         </div>
         <div className="landscapeViewChild">
           <h1>{title}</h1>

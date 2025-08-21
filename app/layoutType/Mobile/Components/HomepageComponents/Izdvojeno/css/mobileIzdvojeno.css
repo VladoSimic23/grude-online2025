@@ -10,16 +10,13 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 0 10px;
+  padding: 3px 10px;
   color: white;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.mobileCommentCount :nth-child(1) {
-  margin-right: 5px;
-}
 .mobileCommentCount i {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .mobileCommentCount2 {
@@ -69,6 +66,7 @@
 
 .mobileSpan {
   font-size: 16px;
+  font-weight: 600;
 }
 
 .mobileDateAndComments {
