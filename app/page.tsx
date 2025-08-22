@@ -1,5 +1,17 @@
+import { Metadata } from "next";
 import MobileContainer from "./layoutType/Mobile/MobileContainer";
 import { detectDevice } from "./lib/detectDevice";
+
+export const metadata: Metadata = {
+  title: "Grude Online",
+  description: "Grudski News Portal",
+  openGraph: {
+    siteName: "Grude Online",
+    description: "Grudski News Portal",
+    url: "https://www.grude-online.info/",
+    type: "website",
+  },
+};
 
 export default async function Home() {
   const deviceType = await detectDevice();

@@ -27,7 +27,7 @@ export default function CommentLink({
       aria-label="View Comments"
       onClick={handleClick}
       style={{
-        borderBottom: `2px solid ${matchColors(color)}`,
+        borderBottom: `3px solid ${matchColors(color)}`,
       }}
     >
       <span>{length}</span>

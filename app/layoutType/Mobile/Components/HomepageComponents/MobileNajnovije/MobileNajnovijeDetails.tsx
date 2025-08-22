@@ -89,12 +89,12 @@ const MobileNajnovijeDetails = ({
               ))}
           </div>
           <div className="landscapeViewChild">
-            <h1>{title}</h1>
+            <h1 style={{ fontSize: "26px" }}>{title}</h1>
             <div className="mobileDateAndComments">
               <span
                 className="mobileSpan"
                 style={{
-                  borderBottom: `2px solid ${
+                  borderBottom: `3px solid ${
                     hasPromo ? "royalblue" : matchColors(theCategoryColor)
                   }`,
                   paddingBottom: "5px",
