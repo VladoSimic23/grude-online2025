@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import mobileNavStyle from "./css/mobileNav.module.css";
 import { ThemeToggle } from "./../../../../components/ThemeToggle";
+import Link from "next/link";
 
 const MobileNav = () => {
   const [showMenuItems, setShowMenuItems] = useState(false);
@@ -45,11 +46,9 @@ const MobileNav = () => {
           <a href="">Vijesti</a>
         </li>
         <li>
-          <a href="/category/crna-kronika">Crna Kronika</a>
+          <Link href="/category/crna-kronika">Crna Kronika</Link>
         </li>
-        <li>
-          <a href="">Gospodarstvo</a>
-        </li>
+
         <li>
           <a href="">Kultura</a>
         </li>
