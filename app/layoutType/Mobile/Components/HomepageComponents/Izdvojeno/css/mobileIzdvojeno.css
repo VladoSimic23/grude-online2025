@@ -86,24 +86,24 @@
   border: none;
   display: block;
   margin: 30px auto;
-  font-size: 14px;
-  padding: 6px 20px;
-  border-radius: 10px;
-  background: darkslateblue;
+  font-size: 18px;
+  padding: 8px 20px;
+  background: #3c2ca0;
   color: white;
   font-weight: 600;
+  font-family: "Barlow Condensed";
 }
 
 .mobileButtonOrange {
   border: none;
   display: block;
   margin: 30px auto;
-  font-size: 16px;
-  padding: 6px 20px;
-  border-radius: 10px;
+  font-size: 18px;
+  padding: 8px 20px;
   background: rgb(27, 65, 153);
   color: white !important;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: "Barlow Condensed";
 }
 
 .mobilePromoBanner {

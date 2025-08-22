@@ -11,6 +11,18 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/:path",
+        destination: "/category/crna-kronika/:path",
+      },
+      // {
+      //   source: "/tag/:slug",
+      //   destination: "/category/tag/:slug",
+      // },
+    ];
+  },
 };
 
 export default nextConfig;

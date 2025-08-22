@@ -22,7 +22,7 @@ const MobilePromo = async () => {
       className="slideTestParent"
       style={{
         margin: "25px 0 30px 0",
-        background: "#424141",
+        background: "#342e35",
         padding: "0 15px",
       }}
     >
@@ -58,7 +58,7 @@ const MobilePromo = async () => {
                       left: "0",
                       background: "rgb(206, 116, 26)",
                       padding: "4px 10px 3px 10px",
-                      fontSize: "10px",
+                      fontSize: "12px",
                       letterSpacing: "1px",
                       borderBottomLeftRadius: "7px",
                       borderBottomRightRadius: "0",

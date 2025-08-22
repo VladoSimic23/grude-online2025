@@ -4,15 +4,14 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  background: #22202b;
+  background: #353342;
 }
 
 .mobileLogo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 5px 8px 15px;
-  border-bottom: 1px solid #d9752c;
+  padding: 8px 5px 10px 15px;
 }
 .mobileLogo img {
   height: auto;
@@ -34,7 +33,7 @@
   padding: 5px 0px;
 }
 .mobileNavItems li a {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 .mobileNavItems li:first-child {

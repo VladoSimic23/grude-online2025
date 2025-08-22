@@ -68,7 +68,7 @@ const MobilePopularno = async () => {
                 >
                   <h1
                     style={{
-                      fontSize: "14px",
+                      fontSize: "15px",
                       fontWeight: "600",
                       fontFamily: "sans-serif",
                     }}

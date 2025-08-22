@@ -45,7 +45,7 @@ const MobileNav = () => {
           <a href="">Vijesti</a>
         </li>
         <li>
-          <a href="">Crna Kronika</a>
+          <a href="/category/crna-kronika">Crna Kronika</a>
         </li>
         <li>
           <a href="">Gospodarstvo</a>

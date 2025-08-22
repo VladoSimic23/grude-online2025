@@ -6,15 +6,15 @@
     z-index: 100;
     // background: #314761;
     // background: linear-gradient(90deg, rgba(49, 71, 97, 1) 0%, rgba(97, 61, 33, 1) 100%);
-    background: #22202b ;
+    background: #353342;
     //background: linear-gradient(90deg, rgba(28, 50, 92, 1) 0%, rgba(56, 36, 16, 1) 100%);
 }
 .mobileLogo {
        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 5px 8px 15px;
-        border-bottom: 1px solid #d9752c;
+        padding: 8px 5px 10px 15px;
+        //border-bottom: 1px solid #d9752c;
         img {
             height: auto;
             width: auto;
@@ -35,7 +35,7 @@
         list-style: none;
         padding: 5px 0px;
         a {
-            font-size: 18px;
+            font-size: 20px;
             text-transform: uppercase;
         }
       }
