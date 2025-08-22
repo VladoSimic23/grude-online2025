@@ -35,6 +35,8 @@
 .mobileNavItems li a {
   font-size: 20px;
   text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  color: #e4e4e4 !important;
 }
 .mobileNavItems li:first-child {
   padding-top: 20px;

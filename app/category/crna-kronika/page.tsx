@@ -28,7 +28,7 @@ const CrnaKronika = async () => {
   );
 
   return (
-    <div className="container mt-3 px-3">
+    <div className="container" style={{ marginTop: "80px" }}>
       {deviceType === "mobile" && (
         <h1 className={`orangeBorder`}>Crna-Kronika</h1>
       )}

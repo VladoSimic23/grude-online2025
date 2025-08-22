@@ -39,7 +39,7 @@ body {
 
 .dark {
   --bg: #292727;
-  --text: #ffffff;
+  --text: #ececec;
   --link: #4dabf7;
 }
 
@@ -48,6 +48,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.5;
 }
 
 /* Generic tags */
@@ -68,6 +69,15 @@ em {
 
 a {
   text-decoration: none;
+}
+p {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+li {
+  font-family: sans-serif;
+  font-size: 16px !important;
+  line-height: 1.5;
 }
 /* Links */
 /* a {

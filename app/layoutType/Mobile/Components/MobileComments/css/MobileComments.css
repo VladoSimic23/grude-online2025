@@ -1,0 +1,167 @@
+.commentWrapper {
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding: 20px 0;
+}
+.commentWrapper button {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px 20px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.displayComments {
+  display: flex;
+}
+.displayComments img {
+  border-radius: 50%;
+}
+.displayComments h4 {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.commentDetails {
+  margin-left: 30px;
+}
+.commentDetails span {
+  font-size: 14px;
+}
+.commentDetails p {
+  font-size: 16px;
+}
+
+.commentForm h3 {
+  display: inline-block;
+  border-bottom: 2px solid rgb(27, 65, 153);
+  padding-bottom: 5px;
+}
+.commentForm textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+}
+.commentForm input {
+  border: 1px solid rgb(216, 216, 216);
+  padding: 8px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.commentForm div {
+  width: 100%;
+  text-align: center;
+}
+.commentForm div button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #313131;
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.commentForm div button:hover {
+  background-color: #008ca1;
+  color: white;
+}
+
+.mobileComments {
+  display: flex;
+  align-items: center;
+}
+.mobileComments img {
+  margin-right: 20px;
+  height: 45px;
+  width: 45px;
+}
+.mobileComments span {
+  font-size: 14px;
+}
+
+.mobileCommentsContent {
+  padding: 10px;
+}
+.mobileCommentsContent p {
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.commentDetailsMobile span {
+  font-size: 14px;
+}
+.commentDetailsMobile p {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.commentDetailsMobile img {
+  margin-right: 30px;
+}
+
+.commentsContainer h2 {
+  font-size: 30px;
+}
+
+.isDesktopComments {
+  display: flex;
+  font-family: sans-serif;
+}
+.isDesktopComments h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.desktopLogo {
+  display: contents;
+}
+
+.isMobileComments {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .isMobileComments {
+    display: block;
+  }
+  .isMobileComments h4 {
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: bold;
+  }
+  .isDesktopComments {
+    display: none;
+  }
+  .displayComments img {
+    width: 50px;
+    height: 50px;
+  }
+  .commentWrapper button {
+    margin-top: 10px;
+    padding: 3px 18px 2px 18px;
+  }
+  .commentWrapper button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 4px;
+  }
+  .commentsContainer h2 {
+    font-size: 20px;
+  }
+  .commentForm {
+    width: 100%;
+  }
+  .commentForm h2 {
+    font-size: 20px;
+  }
+  .commentForm button {
+    font-size: 12px !important;
+    padding: 8px 24px !important;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=MobileComments.css.map */

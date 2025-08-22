@@ -40,7 +40,7 @@ const MobilePostListByCategoryClient = ({ category }: { category: string }) => {
       })}
 
       <button className="mobileButton" onClick={handleClick}>
-        {isLoading ? "Loading..." : "Učitaj više"}
+        {isLoading ? "Loading..." : "Učitaj više vijesti ..."}
       </button>
     </div>
   );

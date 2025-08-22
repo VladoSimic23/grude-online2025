@@ -47,7 +47,9 @@ const MobileFooter = () => {
         </div>
 
         <div className="copyrights">
-          <p>@ 2007 - {currentYear} Grude Online. All Right Reserved.</p>
+          <p style={{ color: "#e4e4e4" }}>
+            @ 2007 - {currentYear} Grude Online. All Right Reserved.
+          </p>
         </div>
       </div>
     </div>
