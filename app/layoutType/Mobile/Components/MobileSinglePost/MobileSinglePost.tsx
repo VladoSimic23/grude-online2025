@@ -87,7 +87,7 @@ const MobileSinglePost = ({ post }: { post: SinglePostI }) => {
 
   return (
     <div style={{ marginTop: "80px", overflow: "hidden", padding: "0 5px" }}>
-      <h1 className={`text-center`}>{title}</h1>
+      <h1 style={{ textAlign: "center" }}>{title}</h1>
 
       <div style={{ position: "relative" }}>
         <div
