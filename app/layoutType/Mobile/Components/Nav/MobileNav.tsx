@@ -12,13 +12,15 @@ const MobileNav = () => {
       <div className={mobileNavStyle.mobileLogo}>
         <ThemeToggle />
         <div>
-          <Image
-            src="/Grude_online_Logotip2.webp"
-            alt="Logo"
-            width={180}
-            height={42}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/Grude_online_Logotip2.webp"
+              alt="Logo"
+              width={180}
+              height={42}
+              priority
+            />
+          </Link>
         </div>
         <div
           className={
@@ -40,35 +42,34 @@ const MobileNav = () => {
         }
       >
         <li>
-          <a href="">Naslovnica</a>
+          <Link href="/">Naslovnica</Link>
         </li>
         <li>
-          <a href="">Vijesti</a>
+          <Link href="/category/vijesti">Vijesti</Link>
         </li>
         <li>
           <Link href="/category/crna-kronika">Crna Kronika</Link>
         </li>
-
         <li>
-          <a href="">Kultura</a>
+          <Link href="/category/sport">Sport</Link>
         </li>
         <li>
-          <a href="">Zanimljivosti</a>
+          <Link href="/category/politika">Politika</Link>
         </li>
         <li>
-          <a href="">Sport</a>
+          <Link href="/category/gospodarstvo">Gospodarstvo</Link>
         </li>
         <li>
-          <a href="">Politika</a>
+          <Link href="/category/kultura">Kultura</Link>
         </li>
         <li>
-          <a href="">Lifestyle</a>
+          <Link href="/category/zanimljivosti">Zanimljivosti</Link>
         </li>
         <li>
-          <a href="">Kontakt</a>
+          <Link href="/category/lifestyle">Lifestyle</Link>
         </li>
         <li>
-          <a href="">Osmrtnice</a>
+          <Link href="https://www.osmrtnica.ba/">Osmrtnice</Link>
         </li>
       </ul>
 

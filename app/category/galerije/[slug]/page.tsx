@@ -81,7 +81,7 @@ export async function generateStaticParams() {
     }));
 }
 
-const SingleCrnaKronika = async ({ params }: Props) => {
+const SingleGalerije = async ({ params }: Props) => {
   const { slug } = await params;
   // const isMobile = await isMobileDevice();
   const deviceType = await detectDevice();
@@ -156,4 +156,4 @@ const SingleCrnaKronika = async ({ params }: Props) => {
   );
 };
 
-export default SingleCrnaKronika;
+export default SingleGalerije;
