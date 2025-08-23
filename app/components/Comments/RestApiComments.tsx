@@ -167,6 +167,7 @@ export default function RestComments({ postId }: { postId: number }) {
                         fontSize: "22px",
                         fontWeight: "bold",
                         letterSpacing: "1px",
+                        marginTop: 0,
                       }}
                     >
                       {" "}
@@ -174,7 +175,15 @@ export default function RestComments({ postId }: { postId: number }) {
                         ? comment.author_name
                         : "Anonymus"}{" "}
                     </h1>
-                    <span>{formatCroatianDateWithClock(comment?.date)}</span>
+                    <span
+                      style={{
+                        fontWeight: 600,
+                        letterSpacing: "0.5px",
+                        alignItems: "flex-start",
+                      }}
+                    >
+                      {formatCroatianDateWithClock(comment?.date)}
+                    </span>
                   </div>{" "}
                 </div>
                 <div className="mobileCommentsContent">

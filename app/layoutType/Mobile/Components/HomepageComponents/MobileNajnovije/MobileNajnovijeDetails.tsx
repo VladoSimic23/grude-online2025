@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // import style from "../../../../../css/style.module.css";
 // import mobileStyle from "../../Css/mobileHomepage.module.css";
 import Image from "next/image";
@@ -40,18 +41,43 @@ const MobileNajnovijeDetails = ({
         <div style={{ marginBottom: "30px" }} className="landscapeView">
           <div
             className="mobileSingleItem"
-            style={{ position: "relative", display: "flex" }}
+            style={{
+              position: "relative",
+              display: "flex",
+              width: "100%",
+              aspectRatio: "7/4",
+            }}
           >
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "#222", // ili tvoja boja/skeleton/slika
+                zIndex: 1,
+              }}
+            >
+              <img
+                src="/blurImage.jpeg"
+                alt="placeholder"
+                width={400}
+                height={200}
+                //style={{ width: "300px", height: "40px" }}
+              />
+              {/* ili spinner, skeleton, itd. */}
+            </div>
             <Image
               style={{
-                position: "relative",
-                zIndex: "1",
                 borderRadius: "10px",
+                zIndex: 2,
               }}
               className="imageCover"
               src={sourceUrl}
-              width={300}
-              height={200}
+              fill
+              // placeholder="blur"
+              // blurDataURL="/noImage.jpg"
               alt={`Ilustracija članka: ${title}`}
               quality={50}
               priority={index < 2 ? true : false}

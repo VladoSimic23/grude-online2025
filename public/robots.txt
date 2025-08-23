@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+# Host
+Host: https://www.grude-online.info
+
+# Sitemaps
+Sitemap: https://www.grude-online.info/sitemap.xml

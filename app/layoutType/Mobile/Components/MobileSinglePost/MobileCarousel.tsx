@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
@@ -104,23 +105,45 @@ const MobileCarousel = ({
 
   return (
     <div style={{ margin: "30px 0" }}>
-      <Image
-        className={`imageContain`}
-        onClick={openGalleryWithoutIndex}
-        style={{
-          height: "auto",
-          position: "relative",
-          zIndex: "1",
-        }}
-        src={mainImg ? mainImg : defaultImage}
-        width={500}
-        height={250}
-        alt={`post image ${postId}`}
-        priority={true}
-        quality={75}
-        fetchPriority="high"
-        id={`post-image-${postId}`}
-      />
+      <div style={{ position: "relative", aspectRatio: "7/4" }}>
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            top: "50%",
+            transform: "translateY(-50%)",
+            zIndex: 1,
+          }}
+        >
+          <img
+            src="/blurImage.jpeg"
+            alt="placeholder"
+            width={400}
+            height={140}
+          />
+          {/* ili spinner, skeleton, itd. */}
+        </div>
+        <Image
+          className={`imageContain`}
+          onClick={openGalleryWithoutIndex}
+          style={{
+            height: "auto",
+            position: "relative",
+            zIndex: "2",
+          }}
+          src={mainImg ? mainImg : defaultImage}
+          width={500}
+          height={250}
+          alt={`post image ${postId}`}
+          priority={true}
+          quality={75}
+          fetchPriority="high"
+          id={`post-image-${postId}`}
+        />
+      </div>
       {/* Preview Thumbnails */}
       <div
         style={{ marginTop: "-25px", position: "relative", padding: "30px 0" }}

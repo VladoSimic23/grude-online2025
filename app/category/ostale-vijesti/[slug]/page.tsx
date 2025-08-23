@@ -15,6 +15,7 @@ import MobilePostSharing from "@/app/layoutType/Mobile/Components/MobileSinglePo
 import MobileSinglePost from "@/app/layoutType/Mobile/Components/MobileSinglePost/MobileSinglePost";
 import MobileSinglePostTags from "@/app/layoutType/Mobile/Components/MobileSinglePost/MobileSinglePostTags";
 import { detectDevice } from "@/app/lib/detectDevice";
+import NotFound from "@/app/not-found";
 //import { getComments } from "@/app/libs/dbComments/dbc";
 
 import type { Metadata } from "next";
@@ -87,9 +88,9 @@ const SingleOstaleVijesti = async ({ params }: Props) => {
   const deviceType = await detectDevice();
   const thePost = await getSinglePost(slug);
 
-  // if (thePost.postBy === null) {
-  //   return <NotFound />;
-  // }
+  if (thePost.postBy === null) {
+    return <NotFound />;
+  }
 
   const {
     postBy: { tags, commentStatus, postId },

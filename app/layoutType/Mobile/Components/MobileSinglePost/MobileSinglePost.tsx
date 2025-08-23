@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 //import style from "../../../css/style.module.css";
 //import mobileStyle from "../MobileHomepage/Css/mobileHomepage.module.css";
@@ -101,6 +102,7 @@ const MobileSinglePost = ({ post }: { post: SinglePostI }) => {
             {formatDateToCroatian(date)}
           </h2>
         </div>
+
         {extraImages.length > 0 ? (
           <MobileCarousel
             images={extraImages}
@@ -109,24 +111,46 @@ const MobileSinglePost = ({ post }: { post: SinglePostI }) => {
             postId={postId}
           />
         ) : (
-          <Image
-            className={`imageContain`}
-            style={{
-              height: "auto",
-              position: "relative",
-              zIndex: "1",
-              marginTop: "20px",
-              marginBottom: "20px",
-            }}
-            src={post?.featuredImage?.node?.sourceUrl || defaultImage}
-            width={500}
-            height={250}
-            alt={`Ilustracija članka: ${title}`}
-            priority={true}
-            fetchPriority="high"
-            quality={75}
-            id={`post-image-${postId}`}
-          />
+          <div style={{ position: "relative", aspectRatio: "7/4" }}>
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                top: "50%",
+                transform: "translateY(-50%)",
+                zIndex: 1,
+              }}
+            >
+              <img
+                src="/blurImage.jpeg"
+                alt="placeholder"
+                width={400}
+                height={140}
+              />
+              {/* ili spinner, skeleton, itd. */}
+            </div>
+            <Image
+              className={`imageContain`}
+              style={{
+                height: "auto",
+                position: "relative",
+                zIndex: "2",
+                marginTop: "20px",
+                marginBottom: "20px",
+              }}
+              src={post?.featuredImage?.node?.sourceUrl || defaultImage}
+              width={500}
+              height={250}
+              alt={`Ilustracija članka: ${title}`}
+              priority={true}
+              fetchPriority="high"
+              quality={75}
+              id={`post-image-${postId}`}
+            />
+          </div>
         )}
       </div>
 

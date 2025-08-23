@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Image from "next/image";
@@ -50,17 +51,36 @@ const MobileIzdvojenoVijesti = ({
           >
             <a href={`/${item.slug}`} style={{ textDecoration: "none" }}>
               <div style={{ position: "relative" }}>
-                <div style={{ position: "relative" }}>
+                <div style={{ position: "relative", aspectRatio: "7/4" }}>
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "#222", // ili tvoja boja/skeleton/slika
+                      zIndex: 1,
+                    }}
+                  >
+                    <img
+                      src="/blurImage.jpeg"
+                      alt="placeholder"
+                      width={400}
+                      height={200}
+                      //style={{ width: "300px", height: "40px" }}
+                    />
+                    {/* ili spinner, skeleton, itd. */}
+                  </div>
                   <Image
                     style={{
-                      position: "relative",
-                      zIndex: "1",
+                      //position: "relative",
+                      zIndex: "2",
                       borderRadius: "0",
                     }}
                     className={style.imageCover}
                     src={item.featuredImage.node.sourceUrl}
-                    width={300}
-                    height={240}
+                    fill
                     alt={item.title}
                     quality={30}
                     priority={true}
