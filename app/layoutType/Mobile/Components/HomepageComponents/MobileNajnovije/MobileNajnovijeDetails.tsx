@@ -62,8 +62,8 @@ const MobileNajnovijeDetails = ({
               <img
                 src="/blurImage.jpeg"
                 alt="placeholder"
-                width={400}
-                height={200}
+                width={330}
+                height={150}
                 //style={{ width: "300px", height: "40px" }}
               />
               {/* ili spinner, skeleton, itd. */}
