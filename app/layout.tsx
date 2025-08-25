@@ -9,6 +9,7 @@ import { ThemeProvider } from "./lib/ThemeProvider";
 import dynamic from "next/dynamic";
 import MobileFooter from "./layoutType/Mobile/Components/Footer/MobileFooter";
 import MobilePopularno from "./layoutType/Mobile/Components/HomepageComponents/MobilePopularno/MobilePopularno";
+import ScrollToTop from "./components/ScrollToTop";
 const MobileNav = dynamic(
   () => import("./layoutType/Mobile/Components/Nav/MobileNav")
 );
@@ -46,6 +47,7 @@ export default async function RootLayout({
           {deviceType === "mobile" && <MobilePopularno />}
           {deviceType === "mobile" && <MobileFooter />}
         </ThemeProvider>
+        <ScrollToTop />
       </body>
     </html>
   );

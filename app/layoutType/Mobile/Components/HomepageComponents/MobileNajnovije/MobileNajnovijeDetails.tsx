@@ -55,7 +55,7 @@ const MobileNajnovijeDetails = ({
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                background: "#222", // ili tvoja boja/skeleton/slika
+                //background: "#222", // ili tvoja boja/skeleton/slika
                 zIndex: 1,
               }}
             >

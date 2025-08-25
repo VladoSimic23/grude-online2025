@@ -107,11 +107,15 @@ const MobileIzdvojenoVijesti = ({
 
                 <div
                   className="mobileCommentCount2"
-                  style={{
-                    background: "#373a3e9e",
-                    zIndex: "5",
-                    borderRadius: "0",
-                  }}
+                  style={
+                    hasImages || hasVideo
+                      ? {
+                          background: "#373a3edc",
+                          zIndex: "5",
+                          borderRadius: "0",
+                        }
+                      : {}
+                  }
                 >
                   {hasImages && <i className="bi bi-camera"></i>}
                   {hasVideo && <i className="bi bi-youtube"></i>}

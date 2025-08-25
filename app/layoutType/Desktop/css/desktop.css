@@ -1,0 +1,103 @@
+.desktopOverlay {
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3098039216);
+}
+.desktopOverlay:hover {
+  background: rgba(0, 0, 0, 0.0823529412);
+}
+
+.desktopVideo {
+  border-radius: 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+  font-size: 26px;
+  padding: 0px 20px 4px 20px;
+  background: rgba(255, 120, 0, 0.8);
+  color: white;
+}
+
+.desktopImage {
+  border-radius: 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0px 20px 4px 20px;
+  font-size: 26px;
+  z-index: 100;
+  background: rgba(255, 120, 0, 0.8);
+  color: white;
+}
+
+.decorUnderline {
+  border-bottom: 3px solid #ec8324;
+  margin-bottom: 30px;
+}
+.decorUnderline h1 {
+  background: #ec8324;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.desktopInnerHTML {
+  font-family: sans-serif;
+}
+.desktopInnerHTML iframe {
+  max-width: 100%;
+  max-height: 100%;
+  background: white;
+}
+.desktopInnerHTML div {
+  width: auto !important;
+}
+.desktopInnerHTML video {
+  width: auto;
+}
+.desktopInnerHTML img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  height: auto;
+}
+.desktopInnerHTML p {
+  font-size: 18px;
+}
+
+.dateAndComment {
+  z-index: 1000;
+}
+.dateAndComment span {
+  font-family: sans-serif;
+}
+
+.desktopPopularno {
+  margin-top: 28px;
+  padding: 15px;
+}
+.desktopPopularno h1 {
+  font-family: sans-serif;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .desktopPopularno img {
+    min-height: 120px;
+  }
+  .naslovna img {
+    max-height: 350px;
+  }
+  .ostaleNaslovne {
+    padding: 6px 15px;
+  }
+  .ostaleNaslovneChild img {
+    max-height: 200px;
+  }
+}/*# sourceMappingURL=desktop.css.map */

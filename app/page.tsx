@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import MobileContainer from "./layoutType/Mobile/MobileContainer";
 import { detectDevice } from "./lib/detectDevice";
+import DesktopContainer from "./layoutType/Desktop/DesktopContainer";
 
 export const metadata: Metadata = {
   title: "Grude Online",
@@ -18,7 +19,7 @@ export default async function Home() {
 
   if (deviceType === "mobile") {
     return (
-      <div style={{ marginTop: "80px" }}>
+      <div style={{ marginTop: "58px" }}>
         <MobileContainer />
       </div>
     );
@@ -27,13 +28,8 @@ export default async function Home() {
     return <div>Tablet version is not implemented yet.</div>;
   }
   return (
-    <div>
-      <h1>dsadasd</h1>
-      <h1>dsadsadasdgfdfg</h1>
-      <h1>dsadasd</h1>
-      <h1>dsadsadasdgfdfg</h1>
-      <h1>dsadasd</h1>
-      <h1>dsadsadasdgfdfg</h1>
+    <div style={{ marginTop: "80px" }}>
+      <DesktopContainer />
     </div>
   );
 }
